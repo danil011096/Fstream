@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <fstream>
 #include <string>
 
@@ -7,7 +7,7 @@ void print_file(std::string path){
 	in.open(path);
 
 	if (in.is_open()) {
-		std::cout << "Ñîäåğæèìîå ôàéëà:\n--------------------\n";
+		std::cout << "Ğ¡Ğ¾Ğ´ĞµÑ€Ğ¶Ğ¸Ğ¼Ğ¾Ğµ Ñ„Ğ°Ğ¹Ğ»Ğ°:\n--------------------\n";
 		char sym;
 		while (in.get(sym))
 			std::cout << sym;
@@ -49,26 +49,26 @@ int main () {
 		int n;
 		std::string path = "file.txt";
 
-		// Êëàññ fstream
+		// ĞšĞ»Ğ°ÑÑ fstream
 		/*std::fstream fs;
 		fs.open(path, std::ios::app | std::ios::in);
 	
 		if (fs.is_open())
 		{
-			std::cout << "Ôàéë îòêğûò.\n";	
+			std::cout << "Ğ¤Ğ°Ğ¹Ğ» Ğ¾Ñ‚ĞºÑ€Ñ‹Ñ‚.\n";	
 			
-			// Çàïèñü äàííûõ â ôàéë
+			// Ğ—Ğ°Ğ¿Ğ¸ÑÑŒ Ğ´Ğ°Ğ½Ğ½Ñ‹Ñ… Ğ² Ñ„Ğ°Ğ¹Ğ»
 			
-			std::cout << "Ââåäèòå ñòğîêó -> ";
+			std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ÑÑ‚Ñ€Ğ¾ĞºÑƒ -> ";
 			std::string msg;
 			std::getline(std::cin, msg);
 			fs << msg << '\n';
 
 			fs.seekg(0, std::ios::beg);
 
-			// ×òåíèå äàííûõ èç ôàéëà
+			// Ğ§Ñ‚ĞµĞ½Ğ¸Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ñ… Ğ¸Ğ· Ñ„Ğ°Ğ¹Ğ»Ğ°
 
-			std::cout << "Ñîäåğæèìîå ôàéëà:\n--------------------\n";
+			std::cout << "Ğ¡Ğ¾Ğ´ĞµÑ€Ğ¶Ğ¸Ğ¼Ğ¾Ğµ Ñ„Ğ°Ğ¹Ğ»Ğ°:\n--------------------\n";
 			char sym;
 			while (fs.get(sym))
 				std::cout << sym;
@@ -76,24 +76,24 @@ int main () {
 			fs.close();
 		}
 		else
-			std::cout << "Îøèáêà îòêğûòèÿ ôàéëà.\n";*/
+			std::cout << "ĞÑˆĞ¸Ğ±ĞºĞ° Ğ¾Ñ‚ĞºÑ€Ñ‹Ñ‚Ğ¸Ñ Ñ„Ğ°Ğ¹Ğ»Ğ°.\n";*/
 
-		// Çàäàíèå "Çàïèñü â ñåğåäèíó ôàéëà"
+		// Ğ—Ğ°Ğ´Ğ°Ğ½Ğ¸Ğµ "Ğ—Ğ°Ğ¿Ğ¸ÑÑŒ Ğ² ÑĞµÑ€ĞµĞ´Ğ¸Ğ½Ñƒ Ñ„Ğ°Ğ¹Ğ»Ğ°"
 		/*print_file(path);
-		std::cout << "Ââåäèòå ñòğîêó -> ";
+		std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ÑÑ‚Ñ€Ğ¾ĞºÑƒ -> ";
 		std::string str;
 		std::getline(std::cin, str);
-		std::cout << "Ââåäèòå ïîçèöèş -> ";
+		std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¿Ğ¾Ğ·Ğ¸Ñ†Ğ¸Ñ -> ";
 		std::cin >> n;
 		if (into_file(path, str, n)) {
-			std::cout << "Çàïèñü âñòàâëåíà. Èòîãîâûé ôàéë:\n";
+			std::cout << "Ğ—Ğ°Ğ¿Ğ¸ÑÑŒ Ğ²ÑÑ‚Ğ°Ğ²Ğ»ĞµĞ½Ğ°. Ğ˜Ñ‚Ğ¾Ğ³Ğ¾Ğ²Ñ‹Ğ¹ Ñ„Ğ°Ğ¹Ğ»:\n";
 			print_file(path);
 			std::cout << std::endl;
 		}
-		std::cout << "Îøèáêà!\n";*/
+		std::cout << "ĞÑˆĞ¸Ğ±ĞºĞ°!\n";*/
 
-		// Çàäà÷à 1. ×òåíèå äàòû èç ôàéëà
-		std::cout << "Çàäà÷à 1.\nÑîäåğæèìîå ôàéëà:\n";
+		// Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° 1. Ğ§Ñ‚ĞµĞ½Ğ¸Ğµ Ğ´Ğ°Ñ‚Ñ‹ Ğ¸Ğ· Ñ„Ğ°Ğ¹Ğ»Ğ°
+		std::cout << "Ğ—Ğ°Ğ´Ğ°Ñ‡Ğ° 1.\nĞ¡Ğ¾Ğ´ĞµÑ€Ğ¶Ğ¸Ğ¼Ğ¾Ğµ Ñ„Ğ°Ğ¹Ğ»Ğ°:\n";
 		const char date_path[] = "date.txt";
 		print_file(date_path);
 		std::ifstream in;
@@ -112,9 +112,9 @@ int main () {
 			int month = std::stoi(date.substr(m_index));
 			int year = std::stoi(date.substr(y_index));
 
-			std::cout << "Äåíü:\t" << day << std::endl;
-			std::cout << "Ìåñÿö:\t" << month << std::endl;
-			std::cout << "Ãîä:\t" << year << std::endl;
+			std::cout << "Ğ”ĞµĞ½ÑŒ:\t" << day << std::endl;
+			std::cout << "ĞœĞµÑÑÑ†:\t" << month << std::endl;
+			std::cout << "Ğ“Ğ¾Ğ´:\t" << year << std::endl;
 		}
 
 
